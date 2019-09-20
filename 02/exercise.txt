@@ -1,0 +1,13 @@
+PS C:\Users\wyw> cd desktop
+PS C:\Users\wyw\desktop> cd MH8811_02
+PS C:\Users\wyw\desktop\MH8811_02> New-Item -Type File 'my file.py'
+
+    Ŀ¼: C:\Users\wyw\desktop\MH8811_02
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        2019/9/20     19:20              0 my file.py
+
+PS C:\Users\wyw\desktop\MH8811_02> cd..
+PS C:\Users\wyw\desktop> rm -Recurse -Force MH8811_02
