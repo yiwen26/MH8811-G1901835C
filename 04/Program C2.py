@@ -25,10 +25,10 @@ def my_ave(data):
 def my_med(data):
     data.sort()
     r=int(len(data)/2)
-    if len(data)% 2 == 0 :
+    if len(data)% 2 != 0 :
         return (data[r])
     else:
-        return ((data[r]+data[r+1])/2)
+        return ((data[r]+data[r-1])/2)
 
 #The function to compute the minimum of the data
 def my_min(data):
@@ -46,7 +46,7 @@ def my_ran(data):
     a=-my_min(data) + my_max(data)
     return(a)
 
-ls=[9,14,12,3,74,15]
+ls=[9,41,12,3,74,15]
 print('The maximum of this list is ', my_max(ls))
 print('The mininum of this list is ',my_min(ls))
 print('The average of this list is ',my_ave(ls))

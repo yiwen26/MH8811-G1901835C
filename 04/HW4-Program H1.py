@@ -38,10 +38,10 @@ def my_ave(data):
 def my_med(data):
     data.sort()
     r=int(len(data)/2)
-    if len(data)% 2 == 0 :
+    if len(data)% 2 != 0 :
         return (data[r])
     else:
-        return ((data[r]+data[r+1])/2)
+        return ((data[r]+data[r-1])/2)
 
 #The function to compute the minimum of the data
 def my_min(data):
