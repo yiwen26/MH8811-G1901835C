@@ -8,12 +8,11 @@
 from genPassword import *
 
 
-if __name__== '__main__' :        
-    n=int(input('Which password length you want?'))
-    if n < 4:
-        print('password length should be more than 4 !')
-    else:
-        password=genPassword(n)
-        print("the password generated is " + password)
+n=int(input('Which password length you want?'))
+if n < 4:
+    print('password length should be more than 4 !')
+else:
+    password=genPassword(n)
+    print("the password generated is " + password)
 
 

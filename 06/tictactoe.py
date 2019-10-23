@@ -20,3 +20,6 @@ def TicTacDraw(board):
             print(s)
             print('-'*(4*n-1))
 
+if __name__ == '__main__':
+    board = [[0, 1, 2], [2, 0, 0], [1, 1, 2]]
+    TicTacDraw(board)

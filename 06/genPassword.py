@@ -6,12 +6,13 @@
 import string
 from random import *
 
+#global a, b, c, d
+a = string.ascii_lowercase
+b = string.ascii_uppercase
+c = string.digits
+d = string.punctuation
+
 def genPassword(n):
-    global a,b,c,d
-    a=string.ascii_lowercase
-    b=string.ascii_uppercase
-    c=string.digits
-    d=string.punctuation
     a1=randint(1,n-3)
     b1=randint(1,n-2-a1)
     c1=randint(1,n-1-a1-b1)
@@ -23,4 +24,7 @@ def genPassword(n):
     p=a2+b2+c2+d2
     shuffle(p)
     return(''.join(p))
+
+if __name__ == '__main__':
+    print(genPassword(12))
 
